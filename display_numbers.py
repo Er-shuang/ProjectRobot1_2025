@@ -27,5 +27,5 @@ numbers = {
 # Display 1,2,3 numbers in a circle
 while True:
     for number in ["1", "2", "3"]:
-        display.show(numbers[number]) # Display numbers
-        sleep(1000) # Each number display for 1 second
+        display.show(numbers[number])  # Display numbers
+        sleep(1000)  # Each number display for 1 second
