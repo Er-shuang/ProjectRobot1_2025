@@ -16,5 +16,5 @@ numbers = {
 while True:
     for number in ["1", "2", "3"]:
         display.show(numbers[number])  # Display numbers
-        print("Now displaying:", num)  # Display result in terminal
+        print("Now displaying:", number)  # Display result in terminal
         sleep(1000)  # Each number display for 1 second
