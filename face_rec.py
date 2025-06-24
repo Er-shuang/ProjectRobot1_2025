@@ -13,7 +13,7 @@ from maix import KPU, GPIO
 from modules import ybserial
 
 # Initialize serial communication
-serial = ybserial()
+serial = ybserial(baudrate=115200)
 
 # Initialize the LCD and camera
 lcd.init()
@@ -113,6 +113,7 @@ while True:
     # Send messages only when the state changes
     if current_msg != last_msg:
         serial.send(current_msg + ",")
+        time.sleep_ms(1)
         print("Send to microbit:", current_msg + ",")
         last_msg = current_msg  # Update the last sent message
 
