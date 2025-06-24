@@ -5,7 +5,7 @@
 # Import everything from the microbit library.
 from microbit import *
 
-uart.init(baudrate=115200, rx=pin1)
+uart.init(baudrate=9600, rx=pin1)
 
 # Define number images
 numbers = {
