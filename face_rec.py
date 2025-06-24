@@ -13,7 +13,7 @@ from maix import KPU, GPIO
 from modules import ybserial
 
 # Initialize serial communication
-serial = ybserial(baudrate=115200)
+serial = ybserial()
 
 # Initialize the LCD and camera
 lcd.init()
